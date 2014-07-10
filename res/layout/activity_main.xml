@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/activity_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/configure"/>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/reset" />
+
+    <TextView
+        android:id="@+id/ip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gateway_title"
+        android:textStyle="bold"
+        android:text="@string/ip_address" />
+
+    <TextView
+        android:id="@+id/gateway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ip"
+        android:layout_alignParentRight="true"
+        android:text="@string/no_connection"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ip_title"
+        android:layout_alignBottom="@+id/ip_title"
+        android:layout_alignParentRight="true"
+        android:text="@string/no_connection"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/preconfigured_network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/preconfigured_network" />
+
+    <TextView
+        android:id="@+id/ssid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/preconfigured_network"
+        android:text="@string/ssid"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/preconfigured_network"
+        android:text="@string/no_configuration"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ssid_title"
+        android:text="@string/password"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ssid"
+        android:text="@string/no_configuration"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/actual_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:text="@string/actual_connection" />
+
+    <TextView
+        android:id="@+id/gateway_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/actual_connection"
+        android:text="@string/gateway"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ip"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/connecting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progbar"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:text="@string/connecting" />
+
+    <Button
+        android:id="@+id/scan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reset_button"
+        android:layout_alignParentRight="true"
+        android:text="@string/scan" />
+
+</RelativeLayout>

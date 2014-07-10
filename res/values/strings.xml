@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default strings -->
+    <string name="app_name">Connect WiFi</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="empty"></string>
+    
+	<!-- Buttons -->	
+    <string name="configure">Configurar la red\nautomáticamente</string>
+    <string name="connect">Conectarse a la red\nconfigurada</string>
+    <string name="scan">Generate Scan Log</string>
+    <string name="reset">Borrar IANUA2</string>
+    
+    <!-- Titles -->    
+    <string name="connecting">Conectando…</string>
+	<string name="ssid">SSID:</string>
+	<string name="password">Password:</string>
+	<string name="gateway">Gateway:</string>
+	<string name="ip_address">IP Address:</string>
+	<string name="preconfigured_network">Preconfigured Network</string>
+	<string name="actual_connection">Actual connection</string>    
+	
+	<!-- Default values -->
+	<string name="no_configuration">Sin configurar</string>
+	<string name="no_connection">Sin conectar</string>	
+	
+</resources>
